@@ -1,0 +1,26 @@
+{
+  "name": "protofolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "backend/server.js",
+  "type": "module",
+  "scripts": {
+    
+    "dev": "nodemon backend/server.js",
+    "start": "node backend/server.js",
+    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false && npm install --prefix frontend && npm run build --prefix frontend"
+  },
+  "author": "Yugesh Anand",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cloudinary": "^1.30.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.18.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.4.2",
+    "nodemailer": "^6.7.6",
+    "nodemon": "^2.0.18",
+    "pdfkit": "^0.13.0"
+  }
+}
